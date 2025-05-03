@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando pseudo-classes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            background-color: gray;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        div:hover{
+            background-color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+        }
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <div>01 <p>voce é gay</p></div>
+    <div>02</div>
+    <div>03</div>
+</body>
+</html>
