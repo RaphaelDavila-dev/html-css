@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro.js" autocomplete="on" method="post">
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>Preencha</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São paulo</option>
+                    <option value="MG">Minas gerais</option>
+                    <option value="RJ">Rio de janeiro</option>
+                </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernanbuco</option>
+                        <option value="BA">Bahia</option>
+                    </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstpro">
+            <datalist id="lstpro">
+                <option value="AMD">Adiministrador</option>
+                <option value="PRO">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PSI">Psicologia</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" rows="10" cols="30" placeholder="Sua mensagem aqui..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
